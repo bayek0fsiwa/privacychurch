@@ -10,3 +10,4 @@ class Contact(models.Model):
 
     def __str__(self):
         return 'Message From' + self.name + ' - ' + self.email
+        
