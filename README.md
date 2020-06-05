@@ -3,7 +3,16 @@
         height="130">
 </p>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+<section class="jumbotron text-center">
+     <div class="container">
+         <img src="/static/images/jumboico.ico" alt="logo" width="120">
+         <h1 class="jumbotron-heading"><span id="typed"></span></h1>
+         <p class="lead text-muted">The FBI Has Not Been Here.</p>
+     </div>
+ </section>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
  <script>
      window.onload = function () {
          console.log("loaded")
