@@ -1,5 +1,7 @@
-
-![alt text](https://github.com/bayek0fsiwa/privacychurch/blob/master/src/static/images/photo.png?raw=true)
+<p align="center">
+    <img src="https://github.com/bayek0fsiwa/privacychurch/blob/master/src/static/images/photo.png?raw=true"
+        height="130">
+</p>
 
 You are being watched. Private and state-sponsored organizations are monitoring and recording your online activities. PrivacyChurch provides services, tools and knowledge to protect your privacy against global mass surveillance.
 
