@@ -18,7 +18,7 @@ Check Out ------> [PrivacyChurch](http://d10875e2.ngrok.io)
 <img alt="PyPI - Django Version" src="https://img.shields.io/pypi/djversions/djangorestframework?logo=django&style=for-the-badge">
 </p>
 
-1. Install the latest stable version of [Python]
+1. Install the latest stable version of [Python 3.7]
 1. Download Pipenv(Assuming You Are On Windows!)
 	* `pip install pipenv`
 1. Install the required dependencies:
