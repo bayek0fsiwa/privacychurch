@@ -14,3 +14,15 @@ You are being watched. Private and state-sponsored organizations are monitoring 
 Check Out ------> [PrivacyChurch](http://d10875e2.ngrok.io)
 
 𝙀𝙣𝙘𝙧𝙮𝙥𝙩𝙞𝙤𝙣 𝘼𝙜𝙖𝙞𝙣𝙨𝙩 𝙂𝙡𝙤𝙗𝙖𝙡 𝙈𝙖𝙨𝙨 𝙎𝙪𝙧𝙫𝙚𝙞𝙡𝙡𝙖𝙣𝙘𝙚.
+
+## Developing
+
+1. Install the latest stable version of [Python]
+1. Download Pipenv(Assuming You Are On Windows!)
+	* `pip install pipenv`
+1. Install the required dependencies:
+	* `pipenv install`
+1. Build the website (Migrate):
+	* `python manage.py makemigrations && python manage.py migrate`
+1. Serve the website locally with live reloading:
+	* `python manage.py runserver`
