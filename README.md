@@ -30,3 +30,9 @@ Check Out ------> [PrivacyChurch](http://d10875e2.ngrok.io)
 	* `python manage.py makemigrations && python manage.py migrate`
 1. Serve the website locally with live reloading:
 	* `python manage.py runserver`
+
+
+## TO-DO
+- [ ] Add Search Functionality
+- [ ] Implement SPA
+- [ ] Make It Look Little Bit Nicer!
