@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 {% block title %} PrivacyChurch {% endblock title %}
@@ -8,7 +9,7 @@
 
 <section class="jumbotron text-center">
   <div class="container">
-    <img src="/static/images/jumboico.ico" alt="logo" width="120">
+    <img src="{% static 'images/jumboico.ico' %}" alt="logo" width="120">
     <h1 class="jumbotron-heading"><span id="typed"></span></h1>
     <p class="lead text-muted">The FBI Has Not Been Here.</p>
   </div>
@@ -50,7 +51,7 @@
     </div>
     <div class="card-body">
       <p class="card-text">
-        <img src="/static/images/firefox_browser.svg" height="120" width="120" class="panel-pic"
+        <img src="{% static 'images/firefox_browser.svg' %}" height="120" width="120" class="panel-pic"
           alt="Firefox logo">
         Firefox is fast, reliable, open-source, and respects your privacy. Don't forget to adjust the settings according
         to our
