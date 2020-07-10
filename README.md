@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/bayek0fsiwa/privacychurch/blob/master/src/static/images/photo.png?raw=true"
+<img src="https://github.com/bayek0fsiwa/privacychurch/blob/master/static/images/photo.png?raw=true"
 height="130">
 </p>
 
