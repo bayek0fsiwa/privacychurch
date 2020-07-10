@@ -2,7 +2,7 @@ import os
 from django.contrib.messages import constants as messages
 
 # Custom Imports
-import django_heroku 
+import django_heroku
 
 
 
@@ -120,5 +120,7 @@ STATICFILES_DIRS = [
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+
 
 django_heroku.settings(locals())
