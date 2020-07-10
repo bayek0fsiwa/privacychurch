@@ -1,6 +1,9 @@
 import os
 from django.contrib.messages import constants as messages
 
+# Custom Imports
+import django_heroku 
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -117,3 +120,5 @@ STATICFILES_DIRS = [
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+django_heroku.settings(locals())
