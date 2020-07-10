@@ -7,24 +7,21 @@
 {% block body %}
 <div class="container my-3">
     <h2>Popular Posts:</h2>
-    
+
     {% for post in allPosts %}
-        
-    
-        
     <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-primary">{{post.author}}</strong>
-                <h4 class="mb-0">{{post.title}}</h4>
-                <div class="mb-1 text-muted">{{post.datetime}}</div>
-                <p class="card-text mb-auto">{{post.content| truncatechars:300 }}</p>
-                <div class="my-2">
-                    <a href="/blog/{{post.slug}}" role="button" class="btn btn-primary">Continue reading</a>
-                </div>
-                
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{post.author}}</strong>
+            <h4 class="mb-0">{{post.title}}</h4>
+            <div class="mb-1 text-muted">{{post.datetime}}</div>
+            <p class="card-text mb-auto">{{post.content| truncatechars:300 }}</p>
+            <div class="my-2">
+                <a href="/blog/{{post.slug}}" role="button" class="btn btn-primary">Continue reading</a>
             </div>
-            </div>
-            {% endfor %}
+
+        </div>
     </div>
+    {% endfor %}
+</div>
 </div>
 {% endblock body %}
