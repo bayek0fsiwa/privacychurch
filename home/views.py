@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.contrib import messages
 from home.models import Contact
+from django.contrib import messages
 from blog.models import Post
 # Create your views here.
 def home(request):
@@ -30,7 +31,14 @@ def privacypolicy(request):
 
 def search(request):
     query = request.GET['query']
-    allPosts = Post.object.filter(title__icontains=query)
-    params = {'allPosts': allPosts}
-    return render(request, 'home/search.html')
+    if len(query) > 50:
+        allPosts = Post.objects.none()
+    else:
+        allPostsTitle = Post.objects.filter(title__icontains=query)
+        allPostsContent = Post.objects.filter(content__icontains=query)
+        allPosts = allPostsTitle.union(allPostsContent)
+    if allPosts.count() == 0:
+        messages.warning(request, "No Search result found")
+    params = {'allPosts': allPosts, 'query': query}
+    return render(request, 'home/search.html', params)
 
