@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.contrib import messages
 from home.models import Contact
+from blog.models import Post
 # Create your views here.
 def home(request):
     return render(request, 'home/home.html')
@@ -11,7 +12,7 @@ def about(request):
 def contact(request):
     if request.method == 'POST':
         name = request.POST['name']
-        email = request.POST['emai']
+        email = request.POST['email']
         content = request.POST['content']
         print(name, email, content)
         
@@ -26,4 +27,10 @@ def contact(request):
 
 def privacypolicy(request):
     return render(request, 'home/privacypolicy.html')
+
+def search(request):
+    query = request.GET['query']
+    allPosts = Post.object.filter(title__icontains=query)
+    params = {'allPosts': allPosts}
+    return render(request, 'home/search.html')
 

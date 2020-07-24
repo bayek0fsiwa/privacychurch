@@ -9,5 +9,5 @@ class Contact(models.Model):
     timestamp = models.DateTimeField(auto_now=True, blank=True)
 
     def __str__(self):
-        return 'Message From' + self.name + ' - ' + self.email
+        return 'Message From ' + self.name + ' - ' + self.email
         

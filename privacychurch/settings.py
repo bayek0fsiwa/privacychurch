@@ -2,7 +2,7 @@ import os
 from django.contrib.messages import constants as messages
 
 # Custom Imports
-import django_heroku
+# import django_heroku
 
 
 
@@ -123,4 +123,4 @@ MESSAGE_TAGS = {
 
 
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
