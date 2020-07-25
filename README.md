@@ -33,7 +33,7 @@ Check Out ------> [PrivacyChurch](http://d10875e2.ngrok.io)
 
 
 ## TO-DO
-- [ ] Add Search Functionality
+- [x] Add Search Functionality
 - [ ] Implement SPA
 - [ ] Make It Look Little Bit Nicer!
 - [ ] Comment section?
