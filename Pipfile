@@ -19,6 +19,7 @@ query-string = "==0.0.0"
 sqlparse = "==0.3.1"
 whitenoise = "==5.1.0"
 Django = "==2.2.13"
+django-ckeditor = "*"
 
 [requires]
 python_version = "3.7"
