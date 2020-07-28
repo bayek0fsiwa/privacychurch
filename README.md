@@ -28,6 +28,8 @@ Check Out ------> [PrivacyChurch](http://d10875e2.ngrok.io)
 	* `pipenv install`
 1. Build the website (Migrate):
 	* `python manage.py makemigrations && python manage.py migrate`
+1. Create Superuser to manage Admin Dashboard:
+	* `python manage.py createsuperuser`
 1. Serve the website locally with live reloading:
 	* `python manage.py runserver`
 
