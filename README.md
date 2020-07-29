@@ -20,10 +20,8 @@ You are being watched. Private and state-sponsored organizations are monitoring 
 </p>
 
 1. Install the latest stable version of [Python 3.7](https://www.python.org/downloads/)
-1. Download Pipenv(Assuming You Are On Windows!)
-	* `pip install pipenv`
 1. Install the required dependencies:
-	* `pipenv install`
+	* `pip install -r requirements.txt`
 1. Build the website (Migrate):
 	* `python manage.py makemigrations && python manage.py migrate`
 1. Create Superuser to manage Admin Dashboard:
